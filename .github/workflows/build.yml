@@ -23,4 +23,11 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: zygisk-il2cppdumper
+        path: out/magisk_module_release/
+    
+    - name : upload apk
+      uses: actions/upload-artifact@master
+      if: always()
+      with:
+        name: xupdate_apk
         path: ${{ github.workspace }}/app/build/outputs/apk/release
