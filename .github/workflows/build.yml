@@ -24,8 +24,3 @@ jobs:
       with:
         name: zygisk-il2cppdumper
         path: out/magisk_module_release/
-
-    - name: Download a single artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: zygisk-il2cppdumper
